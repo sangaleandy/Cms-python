@@ -41,7 +41,7 @@ class Product(models.Model):
 	def __str__(self):
 		return self.name
 	
-# Background Image
+# Background Image,, check decimal places
 class Background(models.Model):
 	name = models.CharField(max_length=100)
 	price = models.DecimalField(default=0, decimal_places=2, max_digits=6)
